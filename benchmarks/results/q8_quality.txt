@@ -1,0 +1,51 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b11946-8ca4060b7
+model      : models/qwen2.5-0.5b-gguf/qwen2.5-0.5b-instruct-q8_0.gguf
+ftype      : Q8_0
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> You are a research paper summarizer.
+
+Use only facts explicitly stated in the provided title and abstract.
+
+Output exactly three bullet points:
+- Problem: the research problem.
+- Method: the proposed method.
+- Finding: the reported result, if any.
+
+Use at most 50 words in total.
+Do not repeat the title or abstract.
+Never invent numbers, percentages, experiments, or limitations.
+Do not infer results that are not explicitly reported.
+If a detail is missing, omit it.
+
+Title:
+Efficient LLM Inference ... (truncated)
+- **Problem:** The research problem is the efficient inference of large language models with quantization, which involves reducing memory usage while maintaining model accuracy.
+- **Method:** The proposed method is a low-bit quantization technique that reduces memory consumption without compromising model accuracy.
+- **Finding:** The reported result is that memory consumption can be significantly reduced with only minor degradation in model quality, making it an effective method for large language model inference.
+
+[ Prompt: 171.0 t/s | Generation: 41.4 t/s ]
+
+
+Exiting...

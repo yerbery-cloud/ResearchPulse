@@ -1,0 +1,34 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading local model: Qwen/Qwen2.5-0.5B-Instruct
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:38,  7.59it/s]Loading weights:  34%|███▍      | 99/290 [00:00<00:00, 503.39it/s]Loading weights:  53%|█████▎    | 155/290 [00:00<00:00, 368.28it/s]Loading weights:  68%|██████▊   | 198/290 [00:01<00:01, 89.87it/s] Loading weights:  78%|███████▊  | 226/290 [00:02<00:00, 77.23it/s]Loading weights:  85%|████████▍ | 246/290 [00:02<00:00, 73.76it/s]Loading weights:  90%|█████████ | 261/290 [00:02<00:00, 70.77it/s]Loading weights:  94%|█████████▍| 273/290 [00:02<00:00, 69.70it/s]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 97.16it/s]
+
+=== FP32 Benchmark ===
+Model: Qwen/Qwen2.5-0.5B-Instruct
+Warm-up runs: 1
+Measured runs: 5
+
+Warm-up completed.
+Run 1: latency=6.260s, tokens=68, tokens/s=10.86, RSS=2674.6 MiB
+Run 2: latency=5.732s, tokens=68, tokens/s=11.86, RSS=2674.6 MiB
+Run 3: latency=5.762s, tokens=68, tokens/s=11.80, RSS=2674.6 MiB
+Run 4: latency=7.137s, tokens=68, tokens/s=9.53, RSS=2674.6 MiB
+Run 5: latency=6.868s, tokens=68, tokens/s=9.90, RSS=2674.6 MiB
+
+=== Summary ===
+Model: Qwen/Qwen2.5-0.5B-Instruct
+Precision: FP32
+Runs: 5
+Mean latency: 6.352s
+Median latency: 6.260s
+Min latency: 5.732s
+Max latency: 7.137s
+Median tokens/s: 10.86
+Median process RSS: 2674.6 MiB
+Model size: 1884.6 MiB
+
+=== Sample Summary ===
+- **Problem:** The research problem involves optimizing large language models for efficient inference using quantization techniques.
+
+- **Method:** The proposed method employs low-bit quantized representations to minimize memory requirements without compromising model performance.
+
+- **Finding:** The study demonstrates that by quantizing models efficiently, memory usage can be reduced while maintaining high-quality inference.

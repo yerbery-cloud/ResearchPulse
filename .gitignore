@@ -5,9 +5,18 @@
 __pycache__/
 *.pyc
 
-# Generated data
-data/*.json
-data/*.db
+# Secrets
+.env
+
+# Generated runtime data
+/data/*.json
+/data/*.db
+
+# Local model files
+/models/
+
+# Raw experiment outputs
+/results/
 
 # VS Code local settings
 .vscode/

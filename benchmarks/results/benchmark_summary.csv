@@ -1,0 +1,4 @@
+configuration,runtime,precision,model_size_mib,prompt_tps,prompt_tps_std,generation_tps,generation_tps_std,median_latency_s,rss_mib,quality
+FP32,PyTorch,FP32,1884.6,,,10.86,,6.260,2674.6,pass
+Q8_0,llama.cpp,Q8_0,638.74,222.11,9.51,58.29,6.25,,,pass
+Q4_K_M,llama.cpp,Q4_K_M,462.96,184.91,15.52,66.55,3.00,,,pass
